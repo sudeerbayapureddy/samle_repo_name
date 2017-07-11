@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" automaticImage="JPEG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="com.karvy.insights.couchbase.config" project="webclient" 
+    file="/webclient/src/main/java/com/karvy/insights/couchbase/config" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="65" width="251" x="27" y="60"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="com.karvy.insights.couchbase.constant" project="webclient" 
+    file="/webclient/src/main/java/com/karvy/insights/couchbase/constant" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="65" width="266" x="354" y="64"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="com.karvy.insights.couchbase.controller" project="webclient" 
+    file="/webclient/src/main/java/com/karvy/insights/couchbase/controller" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="65" width="271" x="707" y="63"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="com.karvy.insights.couchbase.dao" project="webclient" 
+    file="/webclient/src/main/java/com/karvy/insights/couchbase/dao" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="65" width="237" x="713" y="245"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="com.karvy.insights.couchbase.daoimpl" project="webclient" 
+    file="/webclient/src/main/java/com/karvy/insights/couchbase/daoimpl" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="65" width="261" x="355" y="350"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="6" language="java" name="com.karvy.insights.couchbase.junit.test" project="webclient" 
+    file="/webclient/src/main/java/com/karvy/insights/couchbase/junit/test" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="65" width="265" x="25" y="212"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="7" language="java" name="com.karvy.insights.couchbase.vo" project="webclient" 
+    file="/webclient/src/main/java/com/karvy/insights/couchbase/vo" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="65" width="229" x="38" y="355"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <dependency id="8">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="9">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="10">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="13">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="16">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

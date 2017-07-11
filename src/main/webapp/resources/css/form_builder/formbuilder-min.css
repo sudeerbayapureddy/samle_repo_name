@@ -1,0 +1,997 @@
+.fb-button {
+	display: inline-block;
+	margin: 0;
+	padding: .563rem .844rem;
+	border: 0 none;
+	background: #16a085;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 1.5;
+	cursor: pointer;
+	border-radius: .125rem;
+	border: thin solid #19b394;
+	border-bottom: 2px solid #16a085
+}
+
+.fb-button[disabled] {
+	background: #ddd !important;
+	border: thin solid #ccc;
+	color: #777 !important;
+	text-shadow: none !important;
+	-ms-filter: "alpha(Opacity=65)";
+	opacity: .65;
+	cursor: default
+}
+
+.fb-clear {
+	clear: both
+}
+
+.fb-main {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 20px 0 0;
+	position: relative;
+	font-family: 'Source Sans Pro', 'Open Sans', Tahoma
+}
+
+.fb-save-wrapper {
+	position: absolute;
+	right: 20px;
+	top: 10px
+}
+
+.fb-left {
+	float: left;
+	width: 320px;
+	padding-top: 30px
+}
+
+.fb-right {
+	padding-top: 70px;
+	margin-left: 320px;
+	border-left: 1px solid #ddd;
+	padding-left: 20px;
+	min-height: 100%;
+	overflow: hidden
+}
+
+.fb-no-response-fields {
+	color: #999
+}
+
+.fb-tabs {
+	list-style: none;
+	margin: 0 0 20px;
+	padding: 0 0 0 20px;
+	border-bottom: 1px solid #ccc
+}
+
+.fb-tabs li {
+	display: inline-block
+}
+
+.fb-tabs li a {
+	display: block;
+	padding: 10px;
+	border-radius: 5px 5px 0 0;
+	font-size: 13px;
+	cursor: pointer;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent
+}
+
+.fb-tabs li.active a {
+	border: 1px solid #ccc;
+	margin-bottom: -1px;
+	border-bottom-color: #fff
+}
+
+.fb-tab-content .fb-tab-pane {
+	padding: 0 20px;
+	display: none
+}
+
+.fb-tab-content .fb-tab-pane.active {
+	display: block
+}
+
+.fb-add-field-types .section {
+	padding-bottom: 5px;
+	margin-bottom: 20px
+}
+
+.fb-add-field-types {
+	font-size: 0
+}
+
+.fb-add-field-types a {
+	font-size: 13px;
+	display: inline-block;
+	width: 48.5%;
+	background-color: #1abc9c;
+	margin-bottom: 9px;
+	box-sizing: border-box
+}
+
+.fb-add-field-types a:nth-child(odd) {
+	margin-right: 3%
+}
+
+.fb-add-field-types a .symbol {
+	opacity: .6;
+	margin: 0 .25em 0 -1em
+}
+
+.fb-response-fields {
+	padding-bottom: 150px
+}
+
+.fb-response-fields a.sortable-placeholder {
+	display: block;
+	border: 1px dashed #ddd;
+	min-height: 80px;
+	height: 80px;
+	width: 100%
+}
+
+.fb-field-wrapper {
+	cursor: pointer;
+	position: relative;
+	margin-bottom: 20px
+}
+
+.fb-field-wrapper input {
+	border-radius: 3px;
+	border: thin solid #ddd
+}
+
+.fb-field-wrapper:hover .actions-wrapper, .fb-field-wrapper.editing .actions-wrapper
+	{
+	display: block
+}
+
+.fb-field-wrapper:hover .subtemplate-wrapper {
+	border-color: #ddd;
+	border-radius: 3px
+}
+
+.fb-field-wrapper.editing {
+	background-color: #ecf0f1;
+	border-radius: 3px
+}
+
+.fb-field-wrapper.editing .subtemplate-wrapper {
+	border-color: #d9e1e3;
+	border-style: solid;
+	margin: 0;
+	border-radius: 3px
+}
+
+.fb-field-wrapper .actions-wrapper {
+	display: none;
+	position: absolute;
+	bottom: -7px;
+	right: 5px;
+	z-index: 3
+}
+
+.fb-field-wrapper .actions-wrapper a {
+	display: inline-block;
+	background-color: #ccc;
+	padding: 2px 8px
+}
+
+.edit-response-field input, .edit-response-field textarea,
+	.edit-response-field select {
+	border: thin solid #ddd;
+	border-radius: .25em;
+	padding: .5em;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.edit-response-field input:focus, .edit-response-field textarea:focus,
+	.edit-response-field select:focus {
+	outline: 0;
+	border: thin solid #1abc9c
+}
+
+.edit-response-field select {
+	font-size: 14px
+}
+
+.fb-field-wrapper .actions-wrapper a.js-duplicate,
+	.fb-edit-field-wrapper .js-add-option {
+	background-color: #2ecc71;
+	border: 0
+}
+
+.fb-field-wrapper .actions-wrapper a.js-clear, .fb-edit-field-wrapper .js-remove-option
+	{
+	background-color: #e74c3c;
+	border: 0
+}
+
+.fb-field-wrapper .subtemplate-wrapper {
+	border: 1px dashed transparent;
+	margin-bottom: 10px;
+	padding: 10px;
+	position: relative
+}
+
+.fb-field-wrapper .subtemplate-wrapper .cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2
+}
+
+.fb-field-wrapper .subtemplate-wrapper>label {
+	display: block;
+	border-bottom: thin solid #eee;
+	padding-bottom: 3px;
+	margin-bottom: 7px
+}
+
+.fb-field-wrapper .subtemplate-wrapper abbr {
+	color: red
+}
+
+.fb-field-wrapper .input-line {
+	clear: both;
+	margin-bottom: 10px
+}
+
+.fb-field-wrapper .input-line .above-line {
+	margin-top: 7px
+}
+
+.fb-field-wrapper .input-line>span {
+	display: inline-block;
+	vertical-align: top
+}
+
+.fb-field-wrapper .input-line>span input {
+	width: 100%
+}
+
+.fb-field-wrapper .input-line>span>label {
+	display: block;
+	font-size: 13px;
+	margin-left: 3px
+}
+
+.fb-field-wrapper .help-block {
+	display: block;
+	font-size: 12px;
+	margin-top: 5px
+}
+
+.fb-edit-field-wrapper {
+	font-size: 13px
+}
+
+.fb-edit-field-wrapper .fb-field-label {
+	font-weight: 400;
+	background: #eee;
+	padding: .75em;
+	color: #666;
+	font-size: 1.25em
+}
+
+.fb-edit-field-wrapper .fb-field-label .field-type {
+	margin-top: .5em;
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em
+}
+
+.fb-edit-field-wrapper .fb-field-label .field-type:before {
+	content: 'Type: ';
+	color: #999
+}
+
+.fb-edit-field-wrapper .fb-field-label .fa.fa-arrow-right {
+	display: none
+}
+
+.fb-edit-field-wrapper .fb-edit-section-header {
+	border-bottom: 1px solid #ddd;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	clear: both;
+	font-weight: 700
+}
+
+.fb-edit-field-wrapper .js-add-option, .fb-edit-field-wrapper .js-remove-option
+	{
+	padding: 3px 6px
+}
+
+.fb-edit-field-wrapper .fb-bottom-add {
+	margin-top: 8px
+}
+
+.fb-common-wrapper .fb-label-description {
+	margin-bottom: 10px
+}
+
+.fb-common-wrapper .fb-label-description input, .fb-common-wrapper .fb-label-description textarea
+	{
+	width: 100%
+}
+
+.fb-common-wrapper .fb-label-description textarea {
+	min-height: 5em
+}
+
+.response-field-draggable-helper {
+	border: 1px dashed #ddd;
+	background: #eee
+}
+
+.response-field-text input.rf-size-small {
+	width: 130px
+}
+
+.response-field-text input.rf-size-medium {
+	width: 300px
+}
+
+.response-field-text input.rf-size-large {
+	width: 100%
+}
+
+.response-field-paragraph textarea.rf-size-small {
+	width: 200px;
+	min-height: 60px
+}
+
+.response-field-paragraph textarea.rf-size-medium {
+	width: 400px;
+	min-height: 100px
+}
+
+.response-field-paragraph textarea.rf-size-large {
+	width: 100%;
+	min-height: 200px
+}
+
+.response-field-address .street {
+	width: 400px
+}
+
+.response-field-address .city, .response-field-address .state,
+	.response-field-address .zip, .response-field-address .country {
+	width: 198px
+}
+
+.response-field-date .month, .response-field-date .day,
+	.response-field-date .year {
+	width: 50px
+}
+
+.response-field-time .hours, .response-field-time .minutes,
+	.response-field-time .seconds {
+	width: 50px
+}
+
+.response-field-checkboxes .fb-option, .response-field-radio .fb-option
+	{
+	margin-bottom: 5px;
+	display: inline-block
+}
+
+* {
+	box-sizing: border-box
+}
+
+body {
+	background-color: #f2f5f8;
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	xfont-family: sans-serif;
+	font-size: 13px;
+	margin: 0;
+	padding: 0
+}
+
+.main, .fb-main {
+	background-color: #fff;
+	border-radius: 5px;
+	min-height: 600px;
+	padding-bottom: 18px;
+	max-width: 100%
+}
+
+.fb-main {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+.container.main {
+	padding: 0
+}
+
+.fb-left {
+	width: 350px
+}
+
+.fb-left label {
+	font-weight: 400
+}
+
+.fb-left h4 {
+	font-size: 14px
+}
+
+.fb-left a:focus, .fb-left a:hover {
+	text-decoration: none
+}
+
+.fb-left input[type=text], .fb-left textarea, .fb-left select {
+	min-height: 26px;
+	margin-bottom: 3px;
+	width: 100%
+}
+
+.fb-left input[type=text]:focus, .fb-left textarea:focus, .fb-left select:focus
+	{
+	outline-color: #4d90fe;
+	outline-offset: -2px;
+	outline-style: auto;
+	outline-width: 5px
+}
+
+.fb-left label {
+	width: 100%
+}
+
+select {
+	margin-bottom: 5px
+}
+
+section>.content {
+	padding: 10px;
+	border: 2px solid #a4aeb9;
+	margin: 0;
+	border-top: 0
+}
+
+section>h4 {
+	background-repeat: no-repeat;
+	padding-left: 42px;
+	background-position: 8px;
+	line-height: 40px;
+	height: 40px;
+	background-color: #a4aeb9;
+	border-bottom: 3px solid #93999e;
+	margin-top: 25px;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	clear: both;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	font-weight: 700
+}
+
+button.js-save-form.fb-button {
+	display: none
+}
+
+.fb-field-wrapper {
+	margin-bottom: 0
+}
+
+.fb-response-fields {
+	min-width: 380px;
+	min-height: 680px
+}
+
+.edit-response-field .fb-field-label {
+	display: none
+}
+
+.fb-edit-field-id {
+	color: #ccc;
+	margin-left: 140px
+}
+
+#emailConfig label input {
+	display: block
+}
+
+#emailConfig label textarea {
+	display: block
+}
+
+div.maskOptions, div.validator-option, div.validators {
+	margin-left: 25px
+}
+
+div.maskOptions label, div.validator-option label, div.dateOptions label
+	{
+	display: block
+}
+
+div.validator-option input, div.validator-option select {
+	display: block
+}
+
+div.validator a {
+	display: none;
+	color: #000;
+	text-decoration: none;
+	width: 16px;
+	margin-left: 3px
+}
+
+#logics:focus {
+	outline: 0
+}
+
+#logics li {
+	margin-bottom: 18px
+}
+
+.logicItem label {
+	width: 58px
+}
+
+div.logics td {
+	white-space: nowrap;
+	padding: 5px
+}
+
+#logic div.item {
+	border: 1px solid #ccc
+}
+
+fieldset.disabled {
+	background-color: #ccc;
+	opacity: .6
+}
+
+#selectFieldsContainer {
+	list-style-type: none
+}
+
+.rules li {
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #ccc
+}
+
+.rules li fieldset {
+	border: 0
+}
+
+div.logics {
+	padding-bottom: 20px
+}
+
+#logics>li {
+	border-left: 2px #ccc
+}
+
+.logicItem>fieldset {
+	margin-top: 5px;
+	margin-right: 10px;
+	border: 1px solid #999;
+	border-radius: 8px;
+	min-width: 460px;
+	padding: 16px
+}
+
+div.formLogic {
+	border-top: 2px solid #999;
+	margin-top: 10px;
+	padding-top: 10px
+}
+
+.logicRuleItem input.itemAttr {
+	width: 80px
+}
+
+#mailersConfig li {
+	list-style-type: none
+}
+
+#mailersConfig ul {
+	padding-left: 6px
+}
+
+#mailersConfig .mailer {
+	margin-left: 20px;
+	display: none
+}
+
+#mailersConfig .mailer label {
+	display: block
+}
+
+section>h4>.symbol {
+	margin-left: 4px
+}
+
+section>h4 {
+	cursor: pointer
+}
+
+div.hints {
+	display: none;
+	border-radius: 5px;
+	border: 1px dashed #ccc;
+	padding: 4px 4px 10px 10px;
+	margin-bottom: 8px;
+	background-color: #d9edf7
+}
+
+section div.content {
+	display: none
+}
+
+#editForm input, #editForm textarea, #editForm select {
+	border: thin solid #ddd;
+	border-radius: .25em;
+	padding: .5em;
+	display: block;
+	margin-bottom: .7em
+}
+
+#editForm td input, #editForm td textarea, #editForm td select {
+	margin-bottom: 0
+}
+
+#editForm td select {
+	min-width: 138px
+}
+
+section.placeholder label, section.textField label {
+	margin-top: .7em
+}
+
+section.date label, section.date select, section.date label input,
+	section.placeholder label, section.placeholder label input, section.textField label,
+	section.textField select, section.fileUpload label, section.mask label
+	{
+	display: block
+}
+
+section.date input[type=checkbox], section.date input[type=radio],
+	#editForm input[type=checkbox], #editForm input[type=radio] {
+	display: inline-block
+}
+
+a.button, #editField button, #editForm button {
+	margin: 0;
+	padding: 3px 6px;
+	border: 0 none;
+	background: #2ecc71;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	cursor: pointer;
+	border-radius: .125rem
+}
+
+#hotOptionEditor {
+	overflow: hidden;
+	display: none
+}
+
+#hotOptionEditor ul {
+	height: 300px;
+	overflow: scroll;
+	margin: 5px;
+	padding-bottom: 30px
+}
+
+#hotOptionEditor li {
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc
+}
+
+#hotOptionEditor a.showHelp {
+	margin-left: 340px
+}
+
+#hotTable {
+	margin-top: 8px
+}
+
+.hide {
+	display: none
+}
+
+.handsontable table.htCore {
+	margin-bottom: 50px
+}
+
+.fb-right {
+	padding-top: 10px
+}
+
+.testFormPanel {
+	color: #666;
+	background-color: #f4f4f4;
+	padding: 8px;
+	height: 36px;
+	font-size: 15px;
+	text-align: center
+}
+
+a.testRealForm {
+	background-color: red
+}
+
+.navbar {
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700
+}
+
+ul.navInline {
+	margin: 0;
+	padding: 0;
+	list-style-type: none
+}
+
+ul.navInline li {
+	display: inline
+}
+
+ul.navInline li a {
+	text-decoration: none;
+	padding: .2em 1em;
+	color: #fff;
+	display: inline-block;
+	line-height: 52px;
+	margin-top: 4px;
+	font-size: 16px
+}
+
+ul.navInline li a:hover {
+	background-color: #ed5565
+}
+
+ul.navInline li a.create-form {
+	background-color: #337ab7
+}
+
+ul.navInline li a:hover {
+	color: #fff;
+	background-color: #5cb85c
+}
+
+section.header {
+	padding-left: 10px;
+	height: 78px;
+	background-color: #da4453;
+	margin: 0 auto
+}
+
+section.header ul.navInline li {
+	line-height: 72px;
+	margin-left: 1px
+}
+
+.ui-widget {
+	background-color: #fff;
+	background-image: none
+}
+
+.cidToLabel {
+	padding-left: 30px;
+	font-style: italic
+}
+
+.cidToLabel>div {
+	padding-left: 10px;
+	border-left: 2px solid #ccc
+}
+
+.cidToLabel b {
+	padding-right: 10px
+}
+
+.fb-add-field-types a.fb-button {
+	text-align: left;
+	padding: .563rem 0 .563rem 2.44rem;
+	background-color: #a4aeb9;
+	border-bottom: 2px solid #93999e
+}
+
+.fb-add-field-types a.fb-button:hover {
+	background-color: #da4453;
+	color: #fff
+}
+
+#emailConfig>h4 {
+	background-image: url(images/icon-email.png)
+}
+
+#adminConfig>h4 {
+	background-image: url(images/icon-admin.png)
+}
+
+#langConfig>h4 {
+	background-image: url(images/icon-lang.png)
+}
+
+#reCaptchaConfig>h4 {
+	background-image: url(images/icon-protect.png)
+}
+
+#thanksConfig>h4 {
+	background-image: url(images/icon-thank.png)
+}
+
+#autoResponseConfig>h4 {
+	background-image: url(images/icon-auto-response.png)
+}
+
+#logicsConfig>h4 {
+	background-image: url(images/icon-logic.png)
+}
+
+#mailersConfig>h4 {
+	background-image: url(images/icon-mailer.png)
+}
+
+#seoConfig>h4 {
+	background-image: url(images/icon-seo.png)
+}
+
+section.date>h4 {
+	background-image: url(images/icon-date.png)
+}
+
+section.mask>h4 {
+	background-image: url(images/icon-mask.png)
+}
+
+section.options>h4 {
+	background-image: url(images/icon-options.png)
+}
+
+section.validators>h4 {
+	background-image: url(images/icon-validate.png)
+}
+
+section.sender {
+	margin-top: 10px
+}
+
+section.sender>h4 {
+	background-image: url(images/icon-sender.png)
+}
+
+section.fileUpload>h4 {
+	background-image: url(images/icon-file.png)
+}
+
+#logicsConfig.wide {
+	width: 640px
+}
+
+.footer {
+	text-align: center;
+	margin: 18px 38px;
+	clear: both
+}
+
+.fb-field-wrapper .subtemplate-wrapper>label, abbr[data-original-title],
+	abbr[title] {
+	border-bottom: 0
+}
+
+a.moreOptions {
+	text-decoration: underline;
+	font-weight: 700
+}
+
+div.moreOptions {
+	margin: 8px 10px;
+	display: none
+}
+
+textarea.template {
+	height: 250px
+}
+
+input[type=checkbox], input[type=radio] {
+	margin: 0
+}
+
+.fb-field-wrapper.editing {
+	background-color: rgba(48, 140, 253, .24)
+}
+
+.fb-field-wrapper .hiddenField {
+	opacity: .5
+}
+
+.fb-response-fields .checkbox input[type=checkbox], .fb-response-fields .checkbox-inline input[type=checkbox],
+	.fb-response-fields .radio input[type=radio], .fb-response-fields .radio-inline input[type=radio]
+	{
+	margin-left: 0
+}
+
+.colors li {
+	position: relative;
+	float: left;
+	width: 22px;
+	height: 22px;
+	margin: 2px 1px 0 0;
+	background: #000;
+	cursor: pointer
+}
+
+.colors ul {
+	list-style: none;
+	margin-left: 10px;
+	padding-left: 0
+}
+
+.colors li {
+	background: #000
+}
+
+.colors li.active {
+	width: 26px;
+	height: 30px;
+	margin-top: -2px
+}
+
+.skin-flat .colors li.red {
+	background: #ec7063
+}
+
+.skin-flat .colors li.green {
+	background: #1abc9c
+}
+
+.skin-flat .colors li.blue {
+	background: #3498db
+}
+
+.skin-flat .colors li.aero {
+	background: #9cc2cb
+}
+
+.skin-flat .colors li.grey {
+	background: #95a5a6
+}
+
+.skin-flat .colors li.orange {
+	background: #f39c12
+}
+
+.skin-flat .colors li.yellow {
+	background: #f1c40f
+}
+
+.skin-flat .colors li.pink {
+	background: #af7ac5
+}
+
+.skin-flat .colors li.purple {
+	background: #8677a7
+}
+
+#smtpConfig .providers a:hover {
+	background-color: #a4ae89;
+	color: #fff
+}
+
+#smtpConfig .providers a {
+	display: inline-block;
+	border: 1px solid #a4aeb9;
+	padding: 5px
+}

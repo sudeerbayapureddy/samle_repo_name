@@ -1,0 +1,7 @@
+com.karvy.insights.couchbase.config
+com.karvy.insights.couchbase.constant
+com.karvy.insights.couchbase.controller
+com.karvy.insights.couchbase.dao
+com.karvy.insights.couchbase.daoimpl
+com.karvy.insights.couchbase.junit.test
+com.karvy.insights.couchbase.vo

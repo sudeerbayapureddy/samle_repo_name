@@ -1,0 +1,16 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<form:form action="/blog/posts/">
+	<form:hidden path="dateCreated"/>
+	<form:hidden path="revision"/>
+	<div class="section">
+		<label for="title">Title</label>
+		<form:input path="title"/>
+	</div>
+	<div class="section">
+		<label for="body">Body</label>
+		<form:textarea path="body"/>
+	</div>
+	<div>
+		<button type="submit">Submit</button>
+	</div>
+</form:form>
